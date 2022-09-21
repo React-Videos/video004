@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/* Aqui recibimos parametros, pero en React los llamamos propiedades (props)*/
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +16,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {/* Aqui podemos llamar a las props que recibimos */}
+          { /* props.saludo */ }
+          {props.children}
         </a>
       </header>
     </div>
